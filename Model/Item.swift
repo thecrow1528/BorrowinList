@@ -14,15 +14,14 @@ class Item {
     var value: Double
     var serial: String
     var borrowedTo: String
-    var dateOfReturn: Date?
+    var dateOfReturn: String
     //MARK: Init
-    init (name: String, value: Double, serial: String, borrowedTo: String){
+    init (name: String, value: Double, serial: String, borrowedTo: String, dateOfReturn: String){
         self.name = name
         self.value = value
         self.serial = serial
         self.borrowedTo = borrowedTo
+        self.dateOfReturn = dateOfReturn
         }
-    func returnDate(date: Date){
-        self.dateOfReturn = date
-    }
+    
 }

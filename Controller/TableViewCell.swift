@@ -16,15 +16,17 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var borrowedLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var serialLabel: UILabel!
+    @IBOutlet weak var whenLabel: UILabel!
     
     
     
     
-    func set(name:String, borrowed: String, value: Double, serial: String){
+    func set(name:String, borrowed: String, value: Double, serial: String, when: String){
         nameLabel.text = name
         valueLabel.text = String(value) + " KM"
         borrowedLabel.text = borrowed
         serialLabel.text = serial
+        whenLabel.text = when
     }
 
 }
