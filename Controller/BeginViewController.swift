@@ -97,7 +97,8 @@ class BeginViewController: UIViewController {
             let frame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
                 return
         }
-        let contentInset = UIEdgeInsets(top: 10, left: 0, bottom: frame.height + 50, right: 0)
+        let contentInset = UIEdgeInsets(top: 10, left: 0, bottom: frame.height + 50
+            , right: 0)
         scrollView.contentInset = contentInset
     }
     
