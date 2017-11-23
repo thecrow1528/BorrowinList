@@ -21,9 +21,9 @@ class TableViewCell: UITableViewCell {
     
     
     
-    func set(name:String, borrowed: String, value: Double, serial: String, when: String){
+    func set(name:String, borrowed: String, value: String, serial: String, when: String){
         nameLabel.text = name
-        valueLabel.text = String(value) + " KM"
+        valueLabel.text = value + " KM"
         borrowedLabel.text = borrowed
         serialLabel.text = serial
         whenLabel.text = when

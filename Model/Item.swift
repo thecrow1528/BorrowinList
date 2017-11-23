@@ -11,12 +11,12 @@ import Foundation
 class Item {
     //MARK: Properties
     var name:String
-    var value: Double
+    var value: String
     var serial: String
     var borrowedTo: String
     var dateOfReturn: String
     //MARK: Init
-    init (name: String, value: Double, serial: String, borrowedTo: String, dateOfReturn: String){
+    init (name: String, value: String, serial: String, borrowedTo: String, dateOfReturn: String){
         self.name = name
         self.value = value
         self.serial = serial

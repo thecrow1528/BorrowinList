@@ -48,7 +48,6 @@
 		3901B06D1FBE118A00266E2C = {
 			isa = PBXGroup;
 			children = (
-				3901B08F1FBE149B00266E2C /* Default-568h@2x.png */,
 				3901B08E1FBE140A00266E2C /* View */,
 				3901B08D1FBE140300266E2C /* Controller */,
 				3901B08C1FBE13FD00266E2C /* Model */,
@@ -76,6 +75,7 @@
 		3901B08B1FBE13EE00266E2C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				3901B08F1FBE149B00266E2C /* Default-568h@2x.png */,
 				3901B0791FBE118A00266E2C /* AppDelegate.swift */,
 				3901B0801FBE118A00266E2C /* Assets.xcassets */,
 				3901B0821FBE118A00266E2C /* LaunchScreen.storyboard */,

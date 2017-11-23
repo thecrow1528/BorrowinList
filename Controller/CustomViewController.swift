@@ -34,18 +34,21 @@ class CustomViewController: UIViewController,UITableViewDelegate,UITableViewData
         return 80
         
     }
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        MyItems.shared.items.remove(at: indexPath.row)
+       tableView.deleteRows(at: [indexPath], with: .fade)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        let item1 = Item(name: "Mobitel", value: 345.76, serial: "kgdfhgfkj", borrowedTo: "Pepa",dateOfReturn: "19.11.2017")
-        let item2 = Item(name: "MacBook", value: 2340.00, serial: "kKJhgfkj", borrowedTo: "Dino", dateOfReturn: "20.11.2017")
-        let item3 = Item(name: "Punjac", value: 45.76, serial: "PUNJAC87", borrowedTo: "Darko",dateOfReturn: "31.12.2017")
-        MyItems.shared.items.append(item1)
-        MyItems.shared.items.append(item2)
-        MyItems.shared.items.append(item3)
+//
+//        let item1 = Item(name: "Mobitel", value: "345.76", serial: "kgdfhgfkj", borrowedTo: "Pepa",dateOfReturn: "19.11.2017")
+//        let item2 = Item(name: "MacBook", value: "2340.00", serial: "kKJhgfkj", borrowedTo: "Dino", dateOfReturn: "20.11.2017")
+//        let item3 = Item(name: "Punjac", value: "45.76", serial: "PUNJAC87", borrowedTo: "Darko",dateOfReturn: "31.12.2017")
+//        MyItems.shared.items.append(item1)
+//        MyItems.shared.items.append(item2)
+//        MyItems.shared.items.append(item3)
 
         // Do any additional setup after loading the view.
     }
