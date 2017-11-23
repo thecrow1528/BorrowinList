@@ -104,6 +104,8 @@ class BeginViewController: UIViewController {
     
     //MARK: Move TextFields to keyboard. Step 5: Method to reset scrollview when keyboard is hidden.
     func keyboardWillHide(notification: Notification) {
+        
+
         scrollView.contentInset = UIEdgeInsets.zero
     }
 
